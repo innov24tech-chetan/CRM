@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM website</title>
+
+    <!-- css-link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 'Alegreya', serif font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Source Sans 6 font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+    <!-- font-awesome-link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+</head>
+
+<body>
+
+    <!-- header-section -->
+    <header>
+        <div class="header">
+            <div class="logo-img">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav-bar-links">
+                    <li><a href="">Home</a><i class="fa-solid fa-caret-down"></i></li>
+                    <li><a href="">Freature</a><i class="fa-solid fa-caret-down"></i></li>
+                    <li><a href="">Team</a><i class="fa-solid fa-caret-down"></i></li>
+                    <li><a href="">Pricing</a><i class="fa-solid fa-caret-down"></i></li>
+                    <li><a href="">Contact</a><i class="fa-solid fa-caret-down"></i></li>
+                </ul>
+            </div>
+            <div class="header-btn">
+                <button class="log-in-btn">Sign In</button>
+                <div class="openBtn" onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+
+        </div>
+        <div class="nav-bar-responsive " id="navBarResponsive">
+            <div class="nav-bar">
+                <ul class="nav-bar-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Freature</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sign-in-btn"><a href="">Sign In</a></div>
+        </div>
+
+    </header>
+
+    <!-- Hamburger & responsive logo -->
+    <div class="hamburger" id="toggleButton"><i class="fa-solid fa-bars"></i></div>
+    <div class="logo-img-responsive">
+        <h2>Logo</h2>
+    </div>
+
+
+    <!-- hero-section -->
+    <section class="hero-section">
+        <div class="hero-banner page-header section-padding style-dark full-height dc-six right-col-full">
+            <div class="hero-heading">
+                <span class="sub-title ">Digital Marketing</span>
+                <h1>Grow your business with DCode <span id="better">Better Solutions </span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales dictum viverra. Nam gravida
+                    dignissim eros. Vivamus congue erat ante, volutpat dictum neque dignissim eget.</p>
+                <div class="hero-btn">
+                    <a href="" id="white-btn">Hire Us Today</a>
+                    <a href=""><i class="fa-solid fa-circle-play"></i>How it works</a>
+                </div>
+            </div>
+            <img src="images/Frame 1.svg" alt="">
+        </div>
+    </section>
+
+    <!-- main-body-section -->
+    <main class="main">
+
+        <!-- top-section -->
+        <section class="top-section">
+            <div class="sub-heading">Let’s See <span id="data">Digital Features</span></div>
+            <div class="line"></div>
+            <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mi id elit gravida,
+                quis
+                tincidunt
+                purus fringilla. Aenean convallis a neque non pellentesque.</p>
+
+
+            <div class="icon-section">
+                <div class="cloud">
+                    <i class="fa-solid fa-users-line"></i>
+
+                    <h4>Marketing Automation</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis, quam
+                        ut consectetur semper, velit turpis</p>
+
+                </div>
+                <div class="cloud">
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <h4>Sales & CRM</h4>
+                    <p>Mauris commodo egestas odio, id ultrices felis. Fusce at tellus elit. Aliquam a
+                        hendrerit dui. Nunc in metus eu mauris</p>
+
+                </div>
+                <div class="cloud">
+                    <i class="fa-solid fa-computer"></i>
+
+                    <h4>Advanced Reporting</h4>
+                    <p>Nunc mattis mollis mi ac dapibus. Vivamus eu bibendum neque, sed gravida sapien. Pellentesque
+                        tempus
+                        finibus justo.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- tracking-section -->
+        <section class="tracking-section">
+            <div class="text-section">
+                <div class="tracking-heading">
+                    <h1>We provide <span class="t-span">tracking platform </span> for marketing</h1>
+                </div>
+                <div class="line"></div>
+                <div class="tracking-para">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales dictum viverra. Nam
+                        gravida dignissim eros. Vivamus congue erat ante, volutpat dictum neque dignissim eget.</p>
+                </div>
+                <div class="tracking-list">
+                    <ul class="tracking-list-ul">
+                        <li id="blue-img">Nullam placerat nunc id ornare convallis.</li>
+                        <li id="blue-img">Nullam placerat nunc id ornare convallis.</li>
+                        <li id="blue-img">Nullam placerat nunc id ornare convallis.</li>
+
+                    </ul>
+                </div>
+                <div class="tracking-btn"><a href="">HIRE US NOW</a></div>
+            </div>
+            <div class="tracking-img"><img src="images/5024147-removebg-preview.png" alt=""></div>
+        </section>
+
+        <!-- achievement-section -->
+        <section class="achievement-section">
+            <div class="achieve-heading">
+                <h2>Our <span class="t-span">Achievements</span> in Numbers </h2>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mi id elit gravida, quis
+                    tincidunt purus fringilla. Aenean convallis a neque non pellentesque.</p>
+                <div class="achievement-cards">
+                    <div class="card">
+                        <i class="fas fa-people-arrows"></i>
+                        <span class="count" data-count="1300">1300</span>
+                        <p>Happy Users</p>
+
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-smile-beam"></i>
+                        <span class="count" data-count="800">0</span>
+                        <p>Happy Users</p>
+
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-anchor"></i>
+                        <span class="count" data-count="300">0</span>
+                        <p>Happy Users</p>
+
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-industry"></i>
+                        <span class="count" data-count="700">0</span>
+                        <p>Happy Users</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- form-section -->
+        <section class="form-section">
+            <div class="form-div">
+                <div class="form-header">
+                    <h3>Have any query? <span>Let’s Talk</span></h3>
+                </div>
+                <form action="" class="form-input">
+
+                    <input type="text" class="form-control" id="FullName" placeholder="Your full name" required="">
+                    <input type="email" class="form-control" id="YourEmail" placeholder="Your email address"
+                        required="">
+                    <input type="url" class="form-control" id="YourWebsite" placeholder="Your Website URLs" required="">
+                    <textarea class="form-control-message" placeholder="Your Message"></textarea>
+                    <input type="submit" class="form-btn " id="btn" value="submit your enquiry">
+                </form>
+            </div>
+            <div class="form-text">
+                <h2>Engaging <span>New Audiences</span> Through DCode</h2>
+                <div class="line"></div>
+                <div class="form-para">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales dictum viverra. Nam
+                        gravida dignissim eros. Vivamus congue erat ante, volutpat dictum neque dignissim eget.</p>
+                    <p>Nullam tempor, ante in pulvinar fermentum, eros nibh aliquet nisi, vitae mattis nisl risus sit
+                        amet nunc. Fusce velit urna, ultricies ut lorem at, porta venenatis orci. </p>
+                    <p>Suspendisse viverra hendrerit auctor. Donec in interdum magna. Etiam odio nibh, pharetra id enim
+                        non, finibus fermentum mauris.</p>
+
+                </div>
+
+            </div>
+            <div class="form-img">
+                <img src="images/seo-plane-img-removebg-preview.png" alt="">
+            </div>
+        </section>
+
+        <!-- plan-section -->
+        <section class="plan-section">
+            <div class="plan-heading">
+                <h2>Select your plan and number of users</h2>
+            </div>
+            <div class="line"></div>
+            <div class="plan-para">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mi id elit gravida, quis
+                    tincidunt purus fringilla. Aenean convallis a neque non pellentesque.</p>
+            </div>
+            <div class="plan-card-section">
+                <div class="plan-card">
+                    <h3>Start-Up</h3>
+                    <div class="plan-cost">
+                        <span><sup>$</sup>59</span>
+                    </div>
+                    <div class="plan-validity">per month</div>
+                    <div class="plan-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem nunc, semper sed metus
+                            at, lacinia viverra leo.</p>
+                        <ul class="plan-list">
+                            <li>Feedback System</li>
+                            <li>Social Integration</li>
+                            <li>Push Notifications</li>
+                            <li>Single User license</li>
+                            <li id="cross">Visual Reviews</li>
+                            <li id="cross">Log-in via Social Media</li>
+                        </ul>
+                        <div class="plan-card-btn plan-primary-btn"><a href="">Purchase Now</a></div>
+                    </div>
+
+
+                </div>
+                <div class="plan-card plan-card-img">
+                    <h3>Advanced</h3>
+                    <div class="plan-cost">
+                        <span><sup>$</sup>99</span>
+                    </div>
+                    <div class="plan-validity">per month</div>
+                    <div class="plan-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem nunc, semper sed metus
+                            at, lacinia viverra leo.</p>
+                        <ul class="plan-list">
+                            <li>Feedback System</li>
+                            <li>Social Integration</li>
+                            <li>Push Notifications</li>
+                            <li>Single User license</li>
+                            <li>Visual Reviews</li>
+                            <li id="cross">Log-in via Social Media</li>
+                        </ul>
+                        <div class="plan-card-btn"><a href="">Purchase Now</a></div>
+                    </div>
+
+                </div>
+                <div class="plan-card">
+                    <h3>Premium</h3>
+                    <div class="plan-cost">
+                        <span><sup>$</sup>149</span>
+                    </div>
+                    <div class="plan-validity">per month</div>
+                    <div class="plan-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem nunc, semper sed metus
+                            at, lacinia viverra leo.</p>
+                        <ul class="plan-list">
+                            <li>Feedback System</li>
+                            <li>Social Integration</li>
+                            <li>Push Notifications</li>
+                            <li>Single User license</li>
+                            <li>Visual Reviews</li>
+                            <li>Log-in via Social Media</li>
+                        </ul>
+                        <div class="plan-card-btn plan-primary-btn"><a href="">Purchase Now</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- brand-section -->
+        <section class="brand-section">
+            <div class="brand-heading">
+                <h2>250+ of the world’s most <span>Successful Companies</span> with trust</h2>
+                <div class="line"></div>
+                <div class="brand-para">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mi id elit gravida, quis
+                        tincidunt purus fringilla. Aenean convallis a neque non pellentesque.</p>
+                </div>
+            </div>
+            <div class="brand-img-section">
+                <img src="images/brand-img.png" alt="">
+                <img src="images/brand-img.png" alt="">
+                <img src="images/brand-img.png" alt="">
+                <img src="images/brand-img.png" alt="">
+                <img src="images/brand-img.png" alt="">
+            </div>
+        </section>
+
+        <!-- contact-section -->
+        <section class="contact-us-section">
+            <div class="contact-text">
+                <h2>Interested! <span>Have any Questions?</span> </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mi id elit gravida, quis
+                    tincidunt
+                    purus fringilla. Aenean convallis a neque non pellentesque.</p>
+            </div>
+            <div class="contact-btn"><a href="">Contact Us Now!</a></div>
+
+        </section>
+    </main>
+
+    <!-- footer-section -->
+    <footer class="footer">
+        <div class="footer-links">
+            <h3>About DCode</h3>
+            <ul>
+                <li><i class="fas fa-envelope"></i>Support@sacredthemes.net</li>
+                <li><i class="fas fa-phone"></i>+1 (234) 567-9801</li>
+                <li><i class="fas fa-map-marker-alt"></i> 49 Uniqe Square D, </li>
+            </ul>
+            <div class="social-media-links">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <h3>Useful Links</h3>
+            <div class="footer-nav-links">
+                <a href="">Trust & Safety</a>
+                <a href="">Cookie Policy</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <h3>Useful Links</h3>
+            <div class="footer-nav-links">
+                <a href="">Trust & Safety</a>
+                <a href="">Cookie Policy</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <h3>Useful Links</h3>
+            <div class="footer-nav-links">
+                <a href="">Trust & Safety</a>
+                <a href="">Cookie Policy</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+        </div>
+        <div class="email-section">
+            <h3>Stay Updated</h3>
+            <div class="div-para">Subscribe to our newsletter for regular updates</div>
+            <input type="email" class="form-control-footer" id="EmailInout" placeholder="Enter email address"
+                required="">
+            <a href=""><button class="footer-btn">Subscribe Now!</button></a>
+        </div>
+
+    </footer>
+
+    <!-- overlay for the search -->
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+
+            </form>
+        </div>
+    </div>
+
+    <!-- javascript-file-link -->
+    <script src="index.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
