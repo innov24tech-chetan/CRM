@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-
+    overflow-x: hidden;
     max-width: 1350px;
 
     margin: 0 auto;
@@ -15,7 +15,7 @@ body {
 }
 
 
-@media (min-width: 1350px) {
+@media (min-width: 1400px) {
     body {
         width: 100%;
 
@@ -23,12 +23,12 @@ body {
     }
 
 
-    .header {
+    /* .header {
         width: 1350px !important;
-    }
+    } */
 }
 
-@media (min-width: 1750px) {
+/* @media (min-width: 1750px) {
     .page-header.dc-six:before {
         top: -80% !important;
     }
@@ -36,15 +36,82 @@ body {
     .nav-bar {
         float: left !important;
     }
-}
+} */
 
 .header {
     display: flex;
-    gap: 240px;
+    gap: 263px;
     align-items: center;
+    justify-content: center;
     color: #fff;
     padding: 20px 49px;
 
+}
+.main-menu{
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    padding: 5px 10px;
+    min-width: 200px;
+    border-radius: 6px;
+    transform: scaleY(0);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    margin-top: 38px;
+}
+.main-menu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    z-index: 1;
+}
+.sub-menu li {
+    position: relative;
+    padding: 8px 15px;
+}
+
+.sub-menu li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 0px; /* Adjust as needed */
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.sub-menu li a:hover{
+    padding-left: 30px;
+    color: #291fbc;
+}
+
+.sub-menu li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 3px; /* Line height */
+    background: linear-gradient(to right, #488fed 0%, #291fbc 100%);
+    transition: width 0.3s ease, transform 0.3s ease; /* Transition width and transform */
+    transform: translateY(-50%); /* Center the line vertically */
+    z-index: -1;
+}
+
+.sub-menu li a:hover::before {
+    width: 25px; /* Width of the line */
+}
+
+
+.sub-menu li a{
+    color: #000;
 }
 
 .nav-bar-links {
@@ -70,8 +137,10 @@ body {
     padding: 60px 0px 40px 30px;
     width: 100%;
     display: none;
+    z-index: 999;
 }
-.sign-in-btn a{
+
+.sign-in-btn a {
     text-decoration: none;
     color: #fff;
     background-image: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
@@ -101,6 +170,9 @@ body {
     gap: 4px;
     align-items: center;
 }
+.nav-bar-links  li i{
+    font-size: 13px !important;
+}
 
 .log-in-btn {
     font-weight: 600;
@@ -113,6 +185,7 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     background: none;
+    transition: 0.3s ease-in-out;
 }
 
 .request-btn {
@@ -134,19 +207,42 @@ body {
 }
 
 .header-btn i {
-    padding: 7px;
+    padding: 11px;
     color: #000;
     background-color: #fff;
     border-radius: 50%;
 }
 
 .fixed .header-btn i {
-    padding: 7px;
+    padding: 11px;
     border-radius: 50%;
-    background-color: blue;
+    background-image: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
     color: #fff;
 }
+.fixed .openBtn span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 50%;
+    z-index: -1;
+    animation: ripple 1.5s ease-out infinite;
+    animation-delay: 0.2s;
+    background-color: #1606f594;
+  }
+  
 
+@keyframes ripple {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(3);
+    }
+  }
 .earn-btn {
     padding: 10px;
     border-radius: 20px;
@@ -302,7 +398,8 @@ body {
 
     transition: color 0.3s ease;
 }
-.top-section{
+
+.top-section {
     width: 100%;
     /* text-align: center; */
     display: flex;
@@ -332,7 +429,7 @@ body {
 
 .header {
     background-color: transparent;
-    padding: 20px 65px !important;
+    padding: 20px 30px !important;
     transition: background-color 0.3s ease;
     position: fixed;
     width: 100%;
@@ -368,16 +465,60 @@ h1 {
 
 .page-header.dc-six:before {
     height: 140%;
-    width: 100%;
+    width: calc(110% - 35px);
     border-radius: 80px;
     background: var(--heading-text-color);
     content: "";
     position: absolute;
-    left: -11%;
-    top: -60%;
+    left: -14%;
+    top: -68%;
     transform: rotate(-30deg);
     z-index: -1;
 }
+
+.page-header.dc-six {
+    position: relative;
+}
+.hero-section{
+    position: relative;
+}
+.Plant-pot{
+    position: absolute;
+    top: 360px;
+    left: 685px;
+}
+.Plant-pot img{
+    height: 210px;
+}
+
+.openBtn{
+    position: relative;
+}
+.openBtn span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 50%;
+    z-index: -1;
+    animation: ripple 1.5s ease-out infinite;
+    animation-delay: 0.2s;
+    background-color: #ffffffd2;
+  }
+  
+
+@keyframes ripple {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(3);
+    }
+  }
+
 
 .page-header.dc-six:before {
     background: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
@@ -431,6 +572,7 @@ h1 {
 .hero-btn a i {
     font-size: 24px !important;
 }
+
 .hero-btn {
     display: flex;
     gap: 15px;
@@ -455,6 +597,7 @@ h1 {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
 }
 
 .fixed .header {
@@ -650,6 +793,15 @@ h1 {
         left: 20px;
         top: 15px;
         color: #fff;
+        z-index: 999;
+    }
+    .Plant-pot{
+        left: 0px !important;
+        display: none !important;
+    }
+    .Plant-pot img{
+        width: 50px !important;
+        height: 50px;
     }
 
     .email-section {
@@ -830,9 +982,11 @@ h1 {
         padding: 10px 26px;
         width: 185px !important;
     }
-    .main{
+
+    .main {
         padding-top: 30px;
     }
+
     .tracking-section {
         padding: 20px 17px;
     }
@@ -848,7 +1002,7 @@ h1 {
 
     footer {
         align-items: left !important;
-       
+
     }
 }
 
@@ -857,11 +1011,15 @@ h1 {
     cursor: pointer;
 
 }
+
 .hamburger {
-    color: white; /* Default color */
+    color: white;
+    /* Default color */
 }
+
 .hamburger.black {
-    color: black; /* Color when clicked */
+    color: black;
+    /* Color when clicked */
 }
 
 
@@ -1010,7 +1168,7 @@ form {
     cursor: pointer;
     border-radius: 7px;
     border: none;
-    transition: ease-in-out;
+    transition: 0.3s ease-in-out;
 
 }
 
@@ -1539,7 +1697,7 @@ footer {
 .overlay .closebtn {
     position: absolute;
     top: 100px;
-    right: 45px;
+    right: 50px;
     font-size: 60px;
     cursor: pointer;
     color: white;
