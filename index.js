@@ -68,3 +68,6 @@ function animateAllCounters() {
 document.addEventListener('DOMContentLoaded', function () {
     animateAllCounters();
 });
+
+
+ 
