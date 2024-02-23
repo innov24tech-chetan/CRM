@@ -80,68 +80,77 @@
                 </ul>
             </div>
             <div class="header-btn">
-                <button class="log-in-btn">Sign In</button>
+                <button class="log-in-btn pricing-btn">Sign In</button>
 
                 <div class="openBtn" onclick="openSearch()"><span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
 
             </div>
+            <!-- Hamburger & responsive logo -->
+            <div class="hamburger pricing-hamburger" id="toggleButton"><i class="fa-solid fa-bars"></i></div>
 
         </div>
         <div class="nav-bar-responsive " id="navBarResponsive">
-            <div class="nav-bar">
-                <ul class="nav-bar-links">
-                    <li><a href="">Home</a></li>
+            <div class="responsive-links">
+                <ul class="nav-bar-links-responsive">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="">Freature</a></li>
                     <li><a href="">Team</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="price.html">Pricing</a></li>
+                    <li><a href="demo.html">Contact</a></li>
                 </ul>
             </div>
             <div class="sign-in-btn"><a href="">Sign In</a></div>
         </div>
 
     </header>
+
+
+
+
     <div class="form-container">
         <h3>Request for demo</h3>
         <h5>(Tell us a few things about yourself)</h5>
-        <ul class="steps">
+        <!-- <ul class="steps">
             <li class="tab1"><a href=""><span class="user-icon"></span></a> <span>Basic details</span></li>
             <li class="tab1"><a href=""><span class="icon-mobile"><i
                             class="fas fa-mobile-alt"></i></span></a><span>Verification</span></li>
-        </ul>
+        </ul> -->
         <form action="">
             <h4>Great ! Let's understand your crm requirement</h4>
             <div class="form-group">
                 <label for="txtname" class="control-label">Name*</label>
-                <input id="txtname" class="form-control" type="text" name="txtname" spellcheck="false"
-                    autocomplete="off" data-rule-required="true">
+                <input id="txtname" placeholder="Full name" class="form-demo" type="text" name="txtname"
+                    spellcheck="false" autocomplete="off" data-rule-required="true">
             </div>
             <div class="form-group">
                 <label for="txtmobile" class="control-label">Mobile*</label>
-                <input id="txtmobile" placeholder="10 digit mobile number" class="form-control" type="text"
+                <input id="txtmobile" placeholder="10 digit mobile number" class="form-demo" type="text"
                     name="txtmobile" spellcheck="false" autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="txtemail" class="control-label">Email*</label>
-                <input id="txtemail" placeholder="Enter email" class="form-control" type="text" name="txtemail"
+                <input id="txtemail" placeholder="Enter email" class="form-demo" type="text" name="txtemail"
                     spellcheck="false" autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="txtcompany" class="control-label">Company</label>
-                <input id="txtcompany" class="form-control" type="text" name="txtcompany" spellcheck="false"
+                <input id="txtcompany" class="form-demo" type="text" name="txtcompany" spellcheck="false"
                     autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="txtrefer" class="control-label">Refer By</label>
-                <input id="txtrefer" class="form-control" type="text" name="txtrefer" spellcheck="false"
+                <input id="txtrefer" class="form-demo" type="text" name="txtrefer" spellcheck="false"
                     autocomplete="off">
             </div>
             <div class="form-group">
                 <label for="txtremark" class="control-label">What should you look for in CRM Software?</label>
-                <textarea id="txtremark" name="txtremark" class="form-control" rows="2"></textarea>
+                <textarea id="txtremark" name="txtremark" class="form-message-demo" rows="2"></textarea>
             </div>
+            <button class="continue-btn">Continue</button>
+
         </form>
+
     </div>
     <footer class="footer">
         <div class="footer-links">

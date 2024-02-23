@@ -152,9 +152,10 @@ body {
     position: absolute;
     background-color: #fff;
     left: 200px;
+
     height: 400px;
-    padding: 60px 0px 40px 30px;
-    width: 100%;
+    padding: 90px 0px 40px 30px;
+    width: 50%;
     display: none;
     z-index: 999;
 }
@@ -179,10 +180,15 @@ body {
 }
 
 
-.nav-bar-responsive .nav-bar .nav-bar-links a {
+.nav-bar-links-responsive li a {
     color: #000;
+    text-decoration: none;
+
 }
 
+.nav-bar-links-responsive li {
+    list-style-type: none;
+}
 
 .nav-bar ul li {
     display: flex;
@@ -696,6 +702,13 @@ h1 {
 
 }
 
+.pricing-btn {
+    color: #291fbc !important;
+    background-color: #fff;
+    border: solid 2px #291fbc;
+    transition: 0.4s ease-in-out;
+}
+
 .fixed .log-in-btn:hover {
     color: #fff;
     background-color: #291fbc;
@@ -826,8 +839,17 @@ h1 {
     .hero-banner {
         flex-direction: column;
         gap: 70px;
-        padding: 70px 20px;
+        padding: 100px 20px;
         background-image: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
+    }
+
+    .openBtn {
+        display: none !important;
+    }
+
+    .header {
+        gap: 56px !important;
+        padding: 20px 10px !important;
     }
 
     .price-plan-card {
@@ -840,8 +862,28 @@ h1 {
         left: 100px !important;
     }
 
+    .steps {
+        gap: 80px !important;
+    }
+
+    .hamburger {
+        display: block !important;
+    }
+
     .price-card-row1::before {
         margin-left: 90px !important;
+    }
+
+    .form-demo {
+        width: 80vw !important;
+    }
+
+    .form-message-demo {
+        width: 80vw !important;
+    }
+
+    .steps::after {
+        width: 125px !important;
     }
 
     .price-card-text {
@@ -975,9 +1017,9 @@ h1 {
         padding: 0px 30px !important;
     }
 
-    .header {
+    .nav-bar {
 
-        display: none;
+        display: none !important;
 
     }
 
@@ -1072,13 +1114,14 @@ h1 {
         display: none !important;
     }
 
+    /* 
     .hamburger {
         display: block !important;
         z-index: 999;
         position: absolute;
         left: 330px;
         top: 22px;
-    }
+    } */
 
     .plan-section {
         padding-top: 70px !important;
@@ -1117,6 +1160,17 @@ h1 {
     }
 }
 
+.nav-bar-links-responsive {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.nav-bar-links-responsive .nav-bar-links-responsive li a {
+    color: #000;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -1128,9 +1182,20 @@ h1 {
     /* Default color */
 }
 
+.fixed .hamburger {
+    color: #000;
+}
+
 .hamburger.black {
-    color: black;
-    /* Color when clicked */
+    color: #000;
+   
+}
+/* .hamburger.black i{
+    font-size: 35px;
+    font-weight: 600;
+} */
+.pricing-hamburger {
+    color: #000 !important;
 }
 
 
@@ -2337,7 +2402,7 @@ body {
     background: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
     /* height: 100vh; */
     width: 100vw;
-    padding: 140px 0px 0px 0px;
+    padding: 105px 0px 0px 0px;
     text-align: center;
     color: #fff;
 }
@@ -2346,7 +2411,8 @@ body {
     font-size: 32px;
     font-weight: 600;
 }
-.icon-mobile{
+
+.icon-mobile {
     font-size: 24px;
     color: #000;
     display: flex;
@@ -2373,7 +2439,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 400px;
-    padding: 50px 0px;
+    padding: 10px 0px;
 }
 
 .tab1 {
@@ -2394,7 +2460,8 @@ body {
     width: 60px;
     height: 60px;
 }
-.steps::after{
+
+.steps::after {
     content: "";
     display: block;
     height: 2px;
@@ -2402,15 +2469,72 @@ body {
     color: #fff;
     background: #fff;
     width: 440px;
-    top: 288px;
+    top: 214px;
 }
-.form-group{
+
+.form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 5px;
 }
-.form-container form{
+
+.form-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 0px 50px 0px;
+    width: 100vw;
+    gap: 15px;
+}
+
+.form-demo {
+    display: block;
+    width: 35vw;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 7px;
+    border: none;
+}
+
+.form-message-demo {
+    width: 35vw;
+    resize: vertical;
+    padding: 6px 12px;
+    height: 84px;
+    border-radius: 6px;
+    outline: none;
+}
+
+textarea:focus {
+    border: 3px solid #276ae77e;
+}
+
+form h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.continue-btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0px 40px;
+    line-height: 45px;
+    border: none;
+    color: #000;
+    text-decoration: none;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #fff;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.continue-btn:hover {
+    background-color: #ffffffc0;
+
 }
