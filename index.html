@@ -73,35 +73,32 @@
                             <li><a href="">Home</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Contact</a><i class="fas fa-chevron-down"></i>
+                    <li><a href="demo.html">Contact</a><i class="fas fa-chevron-down"></i>
 
                     </li>
                 </ul>
             </div>
             <div class="header-btn">
-                <button class="log-in-btn">Sign In</button>
+                <a href="login.html"> <button class="log-in-btn">Sign In</button></a>
 
                 <div class="openBtn" onclick="openSearch()"><span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
 
             </div>
             <!-- Hamburger & responsive logo -->
-            <div class="hamburger" id="toggleButton"><i class="fa-solid fa-bars"></i></div>
+            <div class="hamburger"><i onclick="openNav()" id="toggleButton" class="fa-solid fa-bars"></i></div>
 
 
         </div>
-        <div class="nav-bar-responsive " id="navBarResponsive">
-            <div class="responsive-links">
-                <ul class="nav-bar-links-responsive">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Freature</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="price.html">Pricing</a></li>
-                    <li><a href="demo.html">Contact</a></li>
-                </ul>
+         <div id="myNav" class="overlayc">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></i></a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="price.html">Price</a>
+                    <a href="demo.html">Request For Demo</a>
+                    <a href="login.html">Contact</a>
+                </div>
             </div>
-            <div class="sign-in-btn"><a href="">Sign In</a></div>
-        </div>
 
     </header>
 

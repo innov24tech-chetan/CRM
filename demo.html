@@ -66,7 +66,7 @@
                             <li><a href="">Home</a></li>
                         </ul>
                     </li>
-                    <li class="main-menu"><a href="">Pricing</a><i class="fas fa-chevron-down"></i>
+                    <li class="main-menu"><a href="price.html">Pricing</a><i class="fas fa-chevron-down"></i>
                         <ul class="sub-menu">
                             <li><a href="">Home</a></li>
                             <li><a href="">Home</a></li>
@@ -74,33 +74,30 @@
                             <li><a href="">Home</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Contact</a><i class="fas fa-chevron-down"></i>
+                    <li><a href="demo.html">Contact</a><i class="fas fa-chevron-down"></i>
 
                     </li>
                 </ul>
             </div>
             <div class="header-btn">
-                <button class="log-in-btn pricing-btn">Sign In</button>
+                <a href="login.html"> <button class="log-in-btn pricing-btn">Sign In</button></a>
 
                 <div class="openBtn" onclick="openSearch()"><span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
 
             </div>
             <!-- Hamburger & responsive logo -->
-            <div class="hamburger pricing-hamburger" id="toggleButton"><i class="fa-solid fa-bars"></i></div>
+            <div class="hamburger pricing-hamburger"><i onclick="openNav()" id="toggleButton" class="fa-solid fa-bars"></i></div>
 
         </div>
-        <div class="nav-bar-responsive " id="navBarResponsive">
-            <div class="responsive-links">
-                <ul class="nav-bar-links-responsive">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Freature</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="price.html">Pricing</a></li>
-                    <li><a href="demo.html">Contact</a></li>
-                </ul>
+        <div id="myNav" class="overlayc">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></i></a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="price.html">Price</a>
+                <a href="demo.html">Request For Demo</a>
+                <a href="login.html">Contact</a>
             </div>
-            <div class="sign-in-btn"><a href="">Sign In</a></div>
         </div>
 
     </header>
@@ -110,14 +107,14 @@
 
     <div class="form-container">
         <h3>Request for demo</h3>
-        <h5>(Tell us a few things about yourself)</h5>
+
         <!-- <ul class="steps">
             <li class="tab1"><a href=""><span class="user-icon"></span></a> <span>Basic details</span></li>
             <li class="tab1"><a href=""><span class="icon-mobile"><i
                             class="fas fa-mobile-alt"></i></span></a><span>Verification</span></li>
         </ul> -->
         <form action="">
-            <h4>Great ! Let's understand your crm requirement</h4>
+
             <div class="form-group">
                 <label for="txtname" class="control-label">Name*</label>
                 <input id="txtname" placeholder="Full name" class="form-demo" type="text" name="txtname"
