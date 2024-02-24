@@ -22,51 +22,47 @@ function closeSearch() {
 //overlay-menu
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    document.getElementById("toggleButton").style.display= "none"
-  }
-  
-  function closeNav() {
+    document.getElementById("toggleButton").style.display = "none"
+}
+
+function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-    document.getElementById("toggleButton").style.display= "block"
-  }
-
-
-    
-    
+    document.getElementById("toggleButton").style.display = "block"
+}
 
 
 
-    //js counter
-    function animateValue(element, start, end, duration) {
-        var range = end - start;
-        var current = start;
-        var increment = end > start ? 1 : -1;
-        var stepTime = Math.abs(Math.floor(duration / range));
-        var timer = setInterval(function () {
-            current += increment;
-            element.textContent = current;
-            if (current == end) {
-                clearInterval(timer);
-            }
-        }, stepTime);
-    }
+//js counter
+function animateValue(element, start, end, duration) {
+    var range = end - start;
+    var current = start;
+    var increment = end > start ? 1 : -1;
+    var stepTime = Math.abs(Math.floor(duration / range));
+    var timer = setInterval(function () {
+        current += increment;
+        element.textContent = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
 
 
-    function animateAllCounters() {
-        var counters = document.querySelectorAll('.count');
-        counters.forEach(function (counter) {
-            var start = 0;
-            var end = parseInt(counter.getAttribute('data-count'));
-            var duration = 2000;
-            animateValue(counter, start, end, duration);
-        });
-    }
-
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        animateAllCounters();
+function animateAllCounters() {
+    var counters = document.querySelectorAll('.count');
+    counters.forEach(function (counter) {
+        var start = 0;
+        var end = parseInt(counter.getAttribute('data-count'));
+        var duration = 2000;
+        animateValue(counter, start, end, duration);
     });
+}
 
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    animateAllCounters();
+});
+
+//map
 
