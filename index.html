@@ -37,20 +37,22 @@
     <header>
         <div class="header">
             <div class="logo-img">
-                <a href="index.html"><h1>Logo</h1></a>
+                <a href="index.html">
+                    <h1>Logo</h1>
+                </a>
             </div>
             <div class="nav-bar">
                 <ul class="nav-bar-links">
-                    <li class="main-menu"><a href="index.html">Home</a><i class="fas fa-chevron-down"></i>
+                    <li><a  class="home-link" href="index.html">Home</a><i class="fas fa-chevron-down"></i>
 
                     </li>
-                    <li class="main-menu"><a href="">Freature</a><i class="fas fa-chevron-down"></i>
+                    <li><a href="demo.html">Demo</a><i class="fas fa-chevron-down"></i>
 
                     </li>
-                    <li class="main-menu"><a href="">Team</a><i class="fas fa-chevron-down"></i>
+                    <li><a href="team.html">Team</a><i class="fas fa-chevron-down"></i>
 
                     </li>
-                    <li class="main-menu"><a href="price.html">Pricing</a><i class="fas fa-chevron-down"></i>
+                    <li><a href="price.html">Pricing</a><i class="fas fa-chevron-down"></i>
 
                     </li>
                     <li><a href="contact.html">Contact</a><i class="fas fa-chevron-down"></i>
@@ -121,6 +123,7 @@
 
         <!-- top-section -->
         <section class="top-section">
+
             <div class="sub-heading">Let’s See <span id="data">Digital Features</span></div>
             <div class="line"></div>
             <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mi id elit gravida,
@@ -430,10 +433,32 @@
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search">
 
+
             </form>
         </div>
     </div>
 
+    <script>
+        // Get the current page URL
+        var currentPageUrl = window.location.href;
+
+        // Get all the menu items
+        var menuItems = document.querySelectorAll('.nav-bar-links li a');
+
+        // Loop through each menu item
+        menuItems.forEach(function (item) {
+            // Check if the href of the menu item matches the current page URL
+            if (item.href === currentPageUrl) {
+                // Add the 'active' class to the <a> tag
+                item.classList.add('active');
+                // Add the 'active' class to the <i> tag
+                var icon = item.nextElementSibling;
+                if (icon && icon.tagName.toLowerCase() === 'i') {
+                    icon.classList.add('active');
+                }
+            }
+        });
+    </script>
 
 
 

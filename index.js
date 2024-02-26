@@ -64,5 +64,40 @@ document.addEventListener('DOMContentLoaded', function () {
     animateAllCounters();
 });
 
-//map
+//
 
+
+function dark() {
+    var element = document.getElementById("ss");
+
+    element.classList.toggle("dark-mode");
+    var btntext = document.getElementById("darkbtn");
+    if (element.classList.contains("dark-mode")) {
+        btntext.innerHTML = "Light mode";
+    } else {
+        btntext.innerHTML = "Dark mode";
+    }
+}
+
+//active class
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the current page URL
+    var currentPageUrl = window.location.href;
+
+    // Get all the menu items
+    var menuItems = document.querySelectorAll('.nav-bar-links li a');
+
+    // Loop through each menu item
+    menuItems.forEach(function (item) {
+        // Check if the href of the menu item matches the current page URL
+        if (item.href === currentPageUrl) {
+            // Add the 'active' class to the <a> tag
+            item.classList.add('active');
+            // Add the 'active' class to the <i> tag
+            var icon = item.nextElementSibling;
+            if (icon && icon.tagName.toLowerCase() === 'i') {
+                icon.classList.add('active');
+            }
+        }
+    });
+});
