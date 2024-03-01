@@ -26,6 +26,7 @@ body {
 .nav-bar-links li .home-link.active {
     color: rgba(255, 255, 255, 0.37);
 }
+
 .nav-bar-links li .home-link i.active {
     color: rgba(255, 255, 255, 0.37);
 }
@@ -725,8 +726,36 @@ h1 {
 .logo-img-responsive {
     display: none;
 }
+.border-bottom{
+    border-bottom: 2px solid #291fbc;
+    font-size: 20px;
+}
+.border-bottom-general{
+    font-size: 24px;
+}
+.term-heading{
+    font-size: 24px;
+}
 
-
+.refund-contain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.refund-container{
+    width: 1200px;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.text-left{
+    font-size: 30px;
+}
+.multiple-items{
+    color: #000;
+}
 /* media query */
 @media only screen and (max-width: 500px) {
     .hero-banner {
@@ -734,6 +763,19 @@ h1 {
         gap: 70px;
         padding: 100px 20px;
         background-image: linear-gradient(-135deg, #4688eb 0%, #291fbc 100%);
+    }
+    .sec-title h2{
+        font-size: 40px !important;
+    }
+    .container{
+        max-width: 350px !important;
+    }
+    .form-content {
+        width: 350px;
+    }
+    .multiple-items{
+        max-width: 300px !important;
+        /* padding: 100px 0px !important; */
     }
 
     .contact-form {
@@ -2533,7 +2575,7 @@ form h4 {
     gap: 19px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    width: 370px;
+    width: 350px;
     height: 250px;
 }
 
@@ -2708,4 +2750,55 @@ input {
     /* Use a font that includes search icon */
 
     color: #fff;
+}
+
+.privacy-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 100px 0px;
+}
+
+.privacy-policy-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.term-sub-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 100px 20px;
+}
+/* testimonial-section */
+.multiple-items{
+    max-width: 1200px ;
+    padding: 100px 0px !important;
+}
+.slick-prev:before{
+    color: #000 !important;
+    font-size: 40px !important;
+}
+.slick-next:before{
+    color: #000 !important;
+    font-size: 40px !important;
+}
+.slick-carousel-content{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.slick-carousel-content p{
+    text-align: center;
 }
